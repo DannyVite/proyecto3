@@ -66,6 +66,21 @@
         <hr>
 
         <!--NEWS CARDS-->
+        <form name="formulario" method="post" action="">
+            Nombre <input type="text" name="nombre" /><br/>
+            Apellidos<input type="text" name="apellidos" /><br/>
+            Deseas información de :<br/>
+            Seleccionar todos <input type="checkbox" name="selector" id="selector" onclick="seleccionarTodos(this.checked)"/><br/>
+            
+            Bobby Fishcer <input type="checkbox" name="viajes" id="ch1" /><br/>
+            Kasparov <input type="checkbox" name="informatica" id="ch2" /><br/>
+            Nakamura <input type="checkbox" name="libros" id="ch3" /><br/>
+            Carlsen <input type="checkbox" name="ocio" id="ch4" /></form><br/>
+    
+    
+    
+        </form>
+
         <div class="news-cards-portfolio">
             <div>
                 <img src="img/bobby-fischer.jpg" alt="Bobby Fischer1">
@@ -74,56 +89,9 @@
                 <a href="#">Learn More<i class="fas fa-angle-double-right"></i></a>
 
             </div>
-            <div>
-                <img src="img/bobby-fischer.jpg" alt="Bobby Fischer2">
-                <h3>GAME2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium?</p>
-                <a href="#">Learn More<i class="fas fa-angle-double-right"></i></a>
-
-            </div>
-            <div>
-                <img src="img/bobby-fischer.jpg" alt="Bobby Fischer3">
-                <h3>GAME3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium?</p>
-                <a href="#">Learn More<i class="fas fa-angle-double-right"></i></a>
-
-            </div>
-            <div>
-                <img src="img/bobby-fischer.jpg" alt="Bobby Fischer4">
-                <h3>GAME4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium?</p>
-                <a href="#">Learn More<i class="fas fa-angle-double-right"></i></a>
-
-            </div>
-            <div>
-                <img src="img/bobby-fischer.jpg" alt="Bobby Fischer4">
-                <h3>GAME5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium?</p>
-                <a href="#">Learn More<i class="fas fa-angle-double-right"></i></a>
-
-            </div>
-            <div>
-                <img src="img/bobby-fischer.jpg" alt="Bobby Fischer4">
-                <h3>GAME6</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium?</p>
-                <a href="#">Learn More<i class="fas fa-angle-double-right"></i></a>
-
-            </div>
-        </div>
-        <form name="formulario" method="post" action="">
-            Nombre <input type="text" name="nombre" /><br/>
-            Apellidos<input type="text" name="apellidos" /><br/>
-            Deseas información de :<br/>
-            Seleccionar todos <input type="checkbox" name="selector" id="selector" onclick="seleccionarTodos(this.checked)"/><br/>
             
-            Viajes <input type="checkbox" name="viajes" id="ch1" /><br/>
-            informatica <input type="checkbox" name="informatica" id="ch2" /><br/>
-            Libros <input type="checkbox" name="libros" id="ch3" /><br/>
-            Ocio <input type="checkbox" name="ocio" id="ch4" /></form><br/>
-    
-    
-    
-        </form>
+        </div>
+        
         
         <section class="social">
             <p>Follow TechNews</p>
