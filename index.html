@@ -12,6 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
     <!--CUSTOM CSS-->    
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function cuantos(objSelect) {
+            var ns = 0;
+            for (var i = 0; i < objSelect.options.length; i++) {
+            if (objSelect.options[i].selected)
+            ns++;
+            }
+            alert('Marcados : ' + ns);
+    
+        }
+        
+        
+        </script>
     
 </head>
 <body>
