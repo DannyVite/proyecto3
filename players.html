@@ -12,6 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
     <!--CUSTOM CSS-->    
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function cuantos(objSelect) {
+            var ns = 0;
+            for (var i = 0; i < objSelect.options.length; i++) {
+            if (objSelect.options[i].selected)
+            ns++;
+            }
+            alert('Marcados : ' + ns);
+    
+        }
+        
+        
+        </script>
 </head>
 <body>
     <div class="menu-btn">
@@ -93,9 +106,22 @@
                 <a href="#">Learn More<i class="fas fa-angle-double-right"></i></a>
 
             </div>
+
         </div>
+        <form name="Fselect">
+            What's your favourite player ?<br/>
+        <select name="coches" multiple="multiple">
+            <option>Bobby Fischer</option>
+            <option>Kasparov</option>
+            <option>Karlsen</option>
+            <option>Nakamura</option>
+            <option>Wesley</option>
+        </select>
+        <br/>
+        <input type="button" value="Nº de marcados" onclick="cuantos(document.Fselect.coches)"/>
+        </form>
         <section class="social">
-            <p>Follow TechNews</p>
+            <p>Follow Chess</p>
             <div class="links">
                 <a href="#">
                     <i class="fab fa-facebook-f"></i>
